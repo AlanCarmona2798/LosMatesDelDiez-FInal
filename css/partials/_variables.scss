@@ -2,65 +2,7 @@
 
 $fontRoboto: 'Roboto', sans-serif;
 
-$mainColor: rgb(180, 7, 248);
-
-@mixin boton{
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 10px black;
-    color: #48cf65;
-    background-color: rgb(238, 17, 17);
-
-    &:hover{
-        text-decoration: none;
-        background-color: rgb(180, 7, 248);
-    }
-    a{
-        text-decoration: none;
-        color: white;
-    }
-}
-
-@mixin button{
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid #212529;
-    background: #212529;
-    &:hover{
-        background: #fff;
-        color: #212529
-    }
-}
-
-$paleta: (
-    blanco: white,
-    verde-oscuro: #0E6251,
-    azul-oscuro: #141e30,
-    negro: black,
-    salmon: salmon,
-    slateviolet: slateblue,
-
-);
-
 .radius{
     border-radius: 30px;
 }
 
-@mixin caja_destacadas{
-    border-radius: 69px;
-    background: #55e2c6;
-    box-shadow: inset -10px -10px 20px #48c0a8,
-                inset 10px 10px 20px #62ffe4;
-}

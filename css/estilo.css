@@ -7,7 +7,7 @@ body {
   width: 100%;
 }
 
-.radius, .Titulo-Destacados {
+.radius {
   border-radius: 30px;
 }
 
@@ -22,57 +22,6 @@ body {
 :root {
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
-
-@-webkit-keyframes swirl-in-fwd {
-  0% {
-    transform: rotate(-540deg) scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(0) scale(1);
-    opacity: 1;
-  }
-}
-@keyframes swirl-in-fwd {
-  0% {
-    transform: rotate(-540deg) scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(0) scale(1);
-    opacity: 1;
-  }
-}
-.logo img {
-  height: 80px;
-  margin-right: 10px;
-}
-
-@media screen and (max-width: 900px) {
-  header {
-    flex-direction: column;
-  }
-  header .logo a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header .logo a .logo-img {
-    margin: 0%;
-  }
-  header .links-header ul {
-    flex-direction: column;
-  }
-  header .links-header ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header .links-header ul li a {
-    text-align: center;
-  }
-}
-
 
 main .texts {
   margin: auto;
@@ -192,47 +141,6 @@ main .banner .p-banner {
   color: black;
 }
 
-.Destacados-texto {
-  display: flex;
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-
-.tarjetitas-container {
-  display: flex;
-  gap: 200px;
-  padding: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.tarjetitas-container .tarjetita {
-  width: 350px;
-  border-radius: 69px;
-  background: #55e2c6;
-  box-shadow: inset -10px -10px 20px #48c0a8, inset 10px 10px 20px #62ffe4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.tarjetitas-container .tarjetita .informacion {
-  padding: 0 20px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.tarjetitas-container .tarjetita .tarjetita_imagen {
-  max-width: 100%;
-}
-
-@media screen and (max-width: 900px) {
-  .tarjetita {
-    width: 300px;
-  }
-  .informacion {
-    padding: 0;
-  }
-}
 .card-group {
   margin-bottom: 60px;
 }
@@ -241,7 +149,7 @@ main .banner .p-banner {
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1);
   box-shadow: 10px 5px 10px black;
   transition: all 1s;
 }
@@ -294,19 +202,40 @@ main .banner .p-banner {
   width: 100%;
 }
 
-.galeria-img {
+.img_container_galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5vw;
+}
+.img_container_galeria div {
+  width: 280px;
+  margin-top: 100px;
+}
+.img_container_galeria div img {
   width: 100%;
-  margin-bottom: 30px;
+}
+.img_container_galeria div img:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 5px 10px black;
   transition: all 1s;
 }
 
-.galeria-img:hover {
-  transform: scale(1.1);
-  box-shadow: 10px 5px 10px black;
+.segmentos-container ul {
+  display: flex;
+  justify-content: space-around;
 }
-
-.texto-galeria {
-  color: #000000;
+.segmentos-container ul li {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  width: 300px;
+  margin-top: 20px;
+  text-align: center;
+}
+.segmentos-container ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
 }
 
 /* registro */
@@ -322,7 +251,7 @@ main .banner .p-banner {
 
 .Registro_form {
   width: 500px;
-  background: linear-gradient(#abc5f5, #76f8de);
+  background: linear-gradient(rgb(206, 206, 206), rgb(81, 197, 218), rgb(206, 206, 206));
   padding: 30px;
   margin: auto;
   margin-top: 100px;
@@ -379,56 +308,6 @@ main .banner .p-banner {
 
 @media screen and (max-width: 900px) {
   .Registro_form {
-    width: 100%;
-  }
-}
-.preparacion_mate {
-  text-align: center;
-  margin: 10px;
-  background-color: beige;
-  font-family: "Roboto";
-}
-
-.titulo-preparacion h3 {
-  color: black;
-  font-size: 30px;
-}
-
-.titulo-preparacion-2 p {
-  color: black;
-  text-align: center;
-  font-size: 20px;
-  margin-top: 20px;
-}
-
-.videos-yt {
-  display: flex;
-  justify-content: center;
-  border-style: outset;
-  border-radius: 50px;
-  width: 100%;
-}
-
-.videos-yt h3 {
-  color: black;
-  font-size: x-large;
-  text-transform: uppercase;
-  margin-top: 100px;
-  margin-right: 200px;
-}
-
-.hayan-servido {
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 10px;
-  color: black;
-  background-color: beige;
-}
-
-@media screen and (max-width: 900px) {
-  .video-mate {
     width: 100%;
   }
 }/*# sourceMappingURL=estilo.css.map */

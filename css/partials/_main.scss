@@ -81,24 +81,3 @@ main{
     font-family: fantasy;
     text-decoration: underline;
 }
-
-
-
-
-.tarjetita_boton{
-    @include button;
-}
-
-.button_catalogo{
-    @include button;
-
-    a{
-        text-decoration: none;
-        color: white;
-        &:hover{
-            color: black;
-        }
-
-    }
-    
-}
