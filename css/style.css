@@ -1,0 +1,175 @@
+
+  
+ 
+  
+  main .texts {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+    font-family: "Poppins";
+  }
+  main .lista-mate ul {
+    list-style-type: square;
+    margin: 10px;
+    padding: 10px;
+  }
+  main .banner .p-banner {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    font-size: 1.7rem;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .item {
+    position: relative;
+    padding-left: 1rem;
+  }
+  
+  .item::before {
+    content: "";
+    display: block;
+    background: slateblue;
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-clip-path: var(--clippy);
+            clip-path: var(--clippy);
+    transition: -webkit-clip-path 2s;
+    transition: clip-path 2s;
+    transition: clip-path 2s, -webkit-clip-path 2s;
+  }
+  
+  .paragraph::before {
+    background: salmon;
+  }
+  
+  .item:hover::before {
+    -webkit-clip-path: polygon(0 0, 81% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 81% 0, 100% 100%, 0 100%);
+  }
+  
+  ul.lista-mate {
+    list-style-type: square;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  li.lista-mate {
+    list-style-type: square;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .boton button {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px black;
+    color: #48cf65;
+    background-color: rgb(238, 17, 17);
+  }
+  
+  .boton button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  button:hover {
+    text-decoration: none;
+    background-color: rgb(180, 7, 248);
+  }/*# sourceMappingURL=estilo.css.map */
+
+
+
+
+
+
+
+
+
+
+.links-header{
+    font-weight: 600;
+    padding-right: 10px;
+    /* Animacion */
+    transition: all 1s;
+ 
+}
+
+/* animacion */
+
+body h3{
+    text-decoration: dotted;
+    color: rgb(255, 255, 255);
+}
+
+body p{
+    text-decoration: double;
+    color: rgb(255, 255, 255);
+    font-family: "roboco";
+    font-size: large;
+}
+
+.tipos-mate h2{
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+}
+
+.lista-mate li{
+    border: 70px;
+    color: rgb(10, 10, 10);
+    font-size: medium;
+    font-family: fantasy;
+    text-decoration: underline;
+    padding: 20px;
+    margin: 5px;
+    
+}
+
+
+
+
+
+
+/* ------------------------------------------------------ Animaciones ------------------------------------------------------ */
+
+.texts{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    color: black;
+    font-family: "Poppins"
+}
+
+
+
+.name{
+    font-size: 3rem;
+    margin-bottom: .5rem;
+    font-family: "Poppins"
+}
+
+.paragraph{
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(5, 5, 5);
+    font-family: "Poppins"
+}
+
+
+
+
+

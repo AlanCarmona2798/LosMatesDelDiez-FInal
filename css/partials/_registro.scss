@@ -1,0 +1,77 @@
+/* registro */
+
+.footer-color-registro{
+    padding: 40px;
+    margin: -5px;
+    background-color: beige;
+}
+
+
+.parrafo_form p{
+    color: rgb(0, 0, 0);
+}
+
+.Registro_form{
+    width: 500px;
+    background: linear-gradient(#abc5f5, #76f8de);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    font-family: "Poppins";
+}
+
+.Registro_form h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+.Registro_form p{
+    height: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.controles {
+    width: 100%;
+    background-color: #f3f4f5;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    font-family: "Poppins";
+    font-size: 14px;
+}
+
+.parrafo_form a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-crear-cuenta-2 a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background: lightcoral;
+    border: none;
+    border-radius: 14px;
+    padding: 7px;
+    font-size: 24px;
+}
+
+.boton-crear-cuenta-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+.Registro_form{   
+    width: 100%;
+
+    }
+}

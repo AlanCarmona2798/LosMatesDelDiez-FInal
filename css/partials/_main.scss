@@ -1,0 +1,104 @@
+main{
+    .texts{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;  
+        color: black;
+        font-family: "Poppins"
+    }
+
+    .lista-mate{
+        ul {
+            list-style-type: square;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+    }
+    .banner{
+        .p-banner{
+
+                display: flex;
+                justify-content: center;
+                color: rgb(0, 0, 0);
+                margin: 20px;
+                font-size: 1.7rem;
+                align-items: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                
+            }
+
+        }
+    }
+
+
+
+    .item{
+        position: relative;
+        padding-left: 1rem;
+    
+    }
+    
+    .item::before{
+        content: "";
+        display: block;
+        background: map-get($paleta, slateviolet );
+        width: 120%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        clip-path: var(--clippy);
+        transition: clip-path 2s;
+    }
+    
+    .paragraph::before{
+        background: map-get($paleta , salmon );
+        
+    }
+    
+    .item:hover::before{
+        clip-path: polygon(0 0, 81% 0, 100% 100%, 0 100%);
+    }
+
+
+.lista-mate {
+    list-style-type: square;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.lista-mate li{
+    list-style-type: square;
+    margin: 10px;
+    padding: 10px;
+    border: 70px;
+    color: rgb(10, 10, 10);
+    font-size: medium;
+    font-family: fantasy;
+    text-decoration: underline;
+}
+
+
+
+
+.tarjetita_boton{
+    @include button;
+}
+
+.button_catalogo{
+    @include button;
+
+    a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: black;
+        }
+
+    }
+    
+}
